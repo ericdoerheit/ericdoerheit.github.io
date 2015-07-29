@@ -1,0 +1,23 @@
+{
+  "name": "ericdoerheit.de",
+  "version": "1.0.0",
+  "description": "My Homepage ===========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericdoerheit/ericdoerheit.github.io.git"
+  },
+  "author": "Eric Dörheit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericdoerheit/ericdoerheit.github.io/issues"
+  },
+  "homepage": "https://github.com/ericdoerheit/ericdoerheit.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+  }
+}
