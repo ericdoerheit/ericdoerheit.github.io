@@ -1,77 +1,45 @@
-<!doctype html>
-<!--
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Eric Dörheit</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kVo/Eh0sv7ZdiwZK32nRsp1FrDT3sLRLx3zVpSSTI9UdO5H02LJNLBg5F1gwvKg0" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet">
 
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-
-    <link rel="import" href="bower_components/paper-styles/paper-styles.html">
-    <link rel="import" href="bower_components/neon-animation/neon-animated-pages.html">
-    <link rel="import" href="bower_components/neon-animation/neon-animations.html">
-    <link rel="import" href="circles-page.html">
-    <link rel="import" href="squares-page.html">
-
-    <style>
-
-      body {
-        overflow: hidden;
-      }
-
-      neon-animated-pages {
-        height: 100%;
-      }
-
-    </style>
-
-    <style is="custom-style">
-
-      :root {
-        --color-one: #4dd0e1;
-        --color-two: #ff9800;
-      }
-
-    </style>
-
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body class="fullbleed">
+  <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="title">Eric Dörheit</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+                <a class="btn btn-block btn-primary" href="https://github.com/ericdoerheit"><i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a></div>
+               <div class="col-sm-3">
+                <a class="btn btn-block btn-primary" href="https://de.linkedin.com/in/eric-dörheit-5780029a"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></div>
+                <div class="col-sm-3">
+                   <a class="btn btn-block btn-primary" href="https://www.facebook.com/ericdoerheit"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+              </div>
+              <div class="col-sm-3">
+               <a class="btn btn-block btn-primary" href="https://www.xing.com/profile/Eric_Doerheit"><i class="fa fa-xing-square"></i> Xing</a>
+                  </div>
+          </div>
+      </div>
 
-    <template is="dom-bind">
-
-      <neon-animated-pages id="pages" selected="0">
-
-        <circles-page on-circle-click="_onCircleClick"></circles-page>
-
-        <squares-page on-click="_onSquaresClick"></squares-page>
-
-      </neon-animated-pages>
-
-    </template>
-
-    <script>
-
-      var scope = document.querySelector('template[is="dom-bind"]');
-
-      scope._onCircleClick = function(event) {
-        this.$.pages.selected = 1;
-      };
-
-      scope._onSquaresClick = function(event) {
-        this.$.pages.selected = 0;
-      };
-
-    </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
